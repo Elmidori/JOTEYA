@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17.475" height="17.824" viewBox="0 0 17.475 17.824">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #017d1d;
+      }
+    </style>
+  </defs>
+  <g id="surface1" transform="translate(-6.109 -14)">
+    <path id="Path_1" data-name="Path 1" class="cls-1" d="M12.284,10.577a6.7,6.7,0,1,0-2.061,1.9l4.942,4.913A1.4,1.4,0,0,0,17.2,15.456c-.017-.018-.033-.034-.051-.051Zm-5.475.458A4.323,4.323,0,1,1,11.129,6.7a4.324,4.324,0,0,1-4.321,4.331Zm0,0" transform="translate(6 14)"/>
+  </g>
+</svg>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body> 
+    
+    <div id="main">
+        <div id="nav">
+            <div class="nav-left">
+                <img src="expo/open-menu.svg" alt="open menu" style="width: 34px;cursor: pointer;margin: 10px;" onclick="openNav()">
+                <div id="searchbar"><input type="text" placeholder="Rechercher un produit.."></div>
+            </div>
+            <div class="nav-center">
+                <a id="logo" href="#"><img src="expo/JOTEYA..png" alt="Logo"></a>
+            </div>
+            <div class="nav-right">
+                <div class="cart"><p>1</p>
+                    <img src="expo/shopping-cart.svg" alt="cart" id="cart"></div>
+                <a href="#" onclick="document.getElementById('login').style.display='block'">Log In</a>
+                <a href="#" class="buttonee" onclick="document.getElementById('signup').style.display='block'">Sign Up</a>
+            </div>
+        </div>
+        
+        <div class="hero">
+            <div class="hero-img"><img src="expo/amd-ryzen.png" alt=""></div>
+            <div class="hero-overlay">
+                <p>La performance a un prix imbattable avec amd ryzen desormais chez joteya.
+                </p>
+                <a href="#" class="buttonee">shop now !</a>
+            </div>
+        </div>
+        
+        <h2>Produits Populaires</h2>
+            <div class="products">
+            
+                <div class="item">
+                    <img src="expo/i5.png" alt="intel i5">
+                    <h1>Intel Core i5</h1>
+                    <p class="price">5000 DHs</p>
+                    <a href="#" class="buttonee">Add to Cart</a>
+                </div>
+                <div class="item">
+                    <img src="expo/i7.png" alt="intel i7">
+                    <h1>Intel Core i7</h1>
+                    <p class="price">5000 DHs</p>
+                    <a href="#" class="buttonee">Add to Cart</a>
+                </div>
+                <div class="item">
+                    <img src="expo/i9.png" alt="intel i9">
+                    <h1>Intel Core i9</h1>
+                    <p class="price">5000 DHs</p>
+                    <a href="#" class="buttonee">Add to Cart</a>
+                </div>
+                <div class="item">
+                    <img src="expo/rtx 2070.png" alt="rtx 2070">
+                    <h1>Nvidia RTX 2070</h1>
+                    <p class="price">5000 DHs</p>
+                    <a href="#" class="buttonee">Add to Cart</a>
+                </div>
+                <div class="item">
+                    <img src="expo/ryzen-9-pib-left-facing-WOF-1260x709.png" alt="ryzen">
+                    <h1>AMD Ryzen 9</h1>
+                    <p class="price">5000 DHs</p>
+                    <a href="#" class="buttonee">Add to Cart</a>
+                </div>
+                <div class="item">
+                    <img src="expo/ryzen-9-pib-left-facing-WOF-1260x709.png" alt="ryzen">
+                    <h1>AMD Ryzen 9</h1>
+                    <p class="price">5000 DHs</p>
+                    <a href="#" class="buttonee">Add to Cart</a>
+                </div>
+                <div class="item">
+                    <img src="expo/ryzen-9-pib-left-facing-WOF-1260x709.png" alt="ryzen">
+                    <h1>AMD Ryzen 9</h1>
+                    <p class="price">5000 DHs</p>
+                    <a href="#" class="buttonee">Add to Cart</a>
+                </div>
+                <div class="item">
+                    <img src="expo/ryzen-9-pib-left-facing-WOF-1260x709.png" alt="ryzen">
+                    <h1>AMD Ryzen 9</h1>
+                    <p class="price">5000 DHs</p>
+                    <a href="#" class="buttonee">Add to Cart</a>
+                </div>
+
+
+
+
+
+
+                
+             </div>
+            <p>view more...</p>
+
+    </div>
+
+
+
+    <!-- login et signup -->
+
+
+    <div id="login" class="modal">
+         <span onclick="document.getElementById('login').style.display='none'"
+          class="close" title="Close Modal">&times;</span>
+
+
+          <form class="modal-content animate" action="/action_page.php">
+    
+
+                <div class="container">
+                    <h1>Log in</h1>
+                    <input type="text" placeholder="Username" name="uname" required>
+                    <br>
+                    <input type="password" placeholder="Password" name="psw" required>
+                    <br>
+                    
+                   <br>
+                   <span class="psw"><a href="#">Forgot password?</a></span>
+                   <br>
+                   <button class="buttonee" type="submit" style="font-size:20px;padding:10px 50px; border: none;">Login</button>
+                </div>
+          </form>
+    </div>
+
+
+
+    <div id="signup" class="modal">
+        <span onclick="document.getElementById('signup').style.display='none'"
+         class="close" title="Close Modal">&times;</span>
+
+
+         <form class="modal-content animate" action="/action_page.php">
+   
+
+               <div class="container">
+                   <h1>Sign up</h1>
+                   <input type="text" placeholder="Username" name="uname" required>
+                   <br>
+                   <input type="password" placeholder="Password" name="psw" required>
+                   <br>
+                   
+                  <br>
+                  <br>
+                  <button class="buttonee" type="submit" style="font-size:20px;padding:10px 50px; border: none;">Sign Up</button>
+               </div>
+         </form>
+   </div>
+
+
+    
+
+
+
+
+
+    <div id="sidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Processeurs</a>
+        <a href="#">Cartes graphiques</a>
+        <a href="#">Cartes meres</a>
+    </div>
+
+
+    <script>
+        var modal = document.getElementById('login');
+        var modal = document.getElementById('signup');
+        
+        
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+
+        function openNav() {
+          document.getElementById("sidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("sidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+    </script>
+   
+</body>
+</html> 
